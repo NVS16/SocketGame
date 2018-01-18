@@ -1,0 +1,16 @@
+{
+  "name": "socket_tutorial",
+  "version": "1.0.0",
+  "description": "socket rooms tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rkpattnaik780",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  }
+}
