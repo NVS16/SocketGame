@@ -1,6 +1,6 @@
 <link href="../styles/draw.css" rel="stylesheet" type="text/css"></link>
 
-<canvas id="canvas">Drawing Canvas (Your Browser is Shitty)</canvas>
+<canvas id="canvas" ng-class="{ 'inactive': !drawing }">Drawing Canvas (Your Browser is Shitty)</canvas>
 <button class = "btn btn-primary" ng-click = "drawnow()" ng-if="drawbtn">Draw first</button>
 <p ng-if = "drawing">Picture to be drawn</p>
 <input class = "from-group" ng-if = "!drawing"/>

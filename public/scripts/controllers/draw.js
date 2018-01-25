@@ -8,7 +8,7 @@
  * Controller of the staticApp
  */
 angular.module('staticApp')
-  .controller('DrawCtrl', function ($scope , drawservice) {
+  .controller('DrawCtrl', function ($scope , drawservice, quizservice) {
 
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");
@@ -48,10 +48,14 @@ angular.module('staticApp')
         context.beginPath();
     }
 
+    // Drawing in room logic
     $scope.drawing = false ;
     $scope.drawbtn = true ;
+    $scope.showquiz = function() {
 
-    $scope.drawnow = function (){
+    };
+
+    $scope.drawnow = function (){ 
         $scope.drawbtn = false ;
         $scope.drawing = !$scope.drawing ;
         console.log($scope.drawing);

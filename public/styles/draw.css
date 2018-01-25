@@ -2,3 +2,7 @@ canvas {
     border: 10px solid black;
     margin-top: 15%;
 }
+
+.inactive {
+    pointer-events: none;
+}
